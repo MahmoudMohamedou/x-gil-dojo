@@ -7,7 +7,7 @@ export const handleDoubleClick = (event) => {
     var mouseX = event.clientX - canvas.getBoundingClientRect().left; // Mouse X position relative to canvas
     var mouseY = event.clientY - canvas.getBoundingClientRect().top; // Mouse Y position relative to canvas
 
-    rectangles.forEach((rect, index) => {
+    rectangles.forEach((rect) => {
         // Check if the click occurred inside the boundaries of any rectangle
         if (
             mouseX >= rect.x &&
