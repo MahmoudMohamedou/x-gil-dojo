@@ -1,7 +1,7 @@
 import { props } from "../main";
 
 export const addRect = () => {
-  let { nextId, tempRect, rectangles } = props;
+  const { nextId, tempRect, rectangles } = props;
   if (!tempRect) return;
   const findRect = rectangles.find((f) => {
     return (

@@ -1,4 +1,5 @@
-import { ctx, props } from "../main";
+import { props } from "../main";
+import { drawSimpleRects } from "../utils/draw-rects-simple";
 
 export const handleMouseMove = (e) => {
   console.log("MOVE");
@@ -8,7 +9,6 @@ export const handleMouseMove = (e) => {
   const {
     canvasOffSetX,
     canvasOffSetY,
-    canvasOffSet,
     rectangles,
     startX,
     startY,
@@ -35,11 +35,6 @@ export const handleMouseMove = (e) => {
   };
 
   // draw the rectangle
-
-  ctx.clearRect(0, 0, canvasOffSet.width, canvasOffSet.height);
   const newRectangles = [...rectangles, props.tempRect];
-  newRectangles.forEach((rect) => {
-    ctx.fillStyle = rect.color; // Set the fill color
-    ctx.fillRect(rect.x, rect.y, rect.width, rect.height); // Draw each rectangle
-  });
+  drawSimpleRects(newRectangles);
 };

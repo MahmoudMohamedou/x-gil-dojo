@@ -1,5 +1,5 @@
 import { repaintRect } from "../utils/repaint-rects";
 
-export const handleClickButton = () => {
+export const handleClickRepaintButton = () => {
   repaintRect();
 };

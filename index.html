@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -17,12 +17,20 @@
         flex-direction: column;
         align-items: flex-start;
       }
+      .actions {
+        display: flex;
+        gap: 16px;
+        margin-top: 8px;
+      }
     </style>
   </head>
   <body>
     <div id="root">
-      <canvas id="myCanvas" width="600" height="400"></canvas>
-      <button id="repaint">Repaint</button>
+      <canvas id="myCanvas" width="800" height="500"></canvas>
+      <div class="actions">
+        <button id="repaint">Repaint</button>
+        <button id="reset">Reset</button>
+      </div>
     </div>
     <script type="module" src="/main.js"></script>
   </body>
