@@ -15,6 +15,8 @@ export const addRect = () => {
   });
   if (!findRect) {
     rectangles.push(tempRect);
+    // reset tempRect
+    props.tempRect = undefined;
     props.nextId++;
   }
 };
