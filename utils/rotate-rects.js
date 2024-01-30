@@ -6,7 +6,6 @@ export const rotateRectangle = (rect) => {
   let start = null;
   props.activeRotations++;
   const rotate = (timestamp) => {
-    console.log(timestamp);
     if (!start) start = timestamp;
     let progress = timestamp - start;
     rect.rotation = (progress / 10) % 360; // Rotate by 1 degree every 10 milliseconds

@@ -13,8 +13,6 @@ export const repaintRect = () => {
   rectangles[rectIndex1].color = randomColor;
   rectangles[rectIndex2].color = randomColor;
 
-  console.log(rectangles);
-
   // redraw with the new generated color
   drawSimpleRects();
 };

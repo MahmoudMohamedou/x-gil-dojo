@@ -2,7 +2,6 @@ import { canvas, props } from "../main";
 import { rotateRectangle } from "../utils/rotate-rects";
 
 export const handleRectDoubleClick = (event) => {
-  console.log("DOUBLE_CLICK");
   const { rectangles, rectsToBeDelete } = props;
   var mouseX = event.clientX - canvas.getBoundingClientRect().left; // Mouse X position relative to canvas
   var mouseY = event.clientY - canvas.getBoundingClientRect().top; // Mouse Y position relative to canvas

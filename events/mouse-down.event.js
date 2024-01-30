@@ -2,7 +2,6 @@ import { props } from "../main";
 import { getRandomColor } from "../utils/random-color";
 
 export const handleMouseDown = (e) => {
-  console.log("MOUSE_DOWN");
   e.preventDefault();
   e.stopPropagation();
 

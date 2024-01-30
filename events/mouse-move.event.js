@@ -2,7 +2,6 @@ import { props } from "../main";
 import { drawSimpleRects } from "../utils/draw-rects-simple";
 
 export const handleMouseMove = (e) => {
-  console.log("MOVE");
   e.preventDefault();
   e.stopPropagation();
 
